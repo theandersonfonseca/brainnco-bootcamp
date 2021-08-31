@@ -1,3 +1,19 @@
+import Header from './Header';
+import Menu from './Menu';
+import Sidebar from './Sidebar';
+import Content from './Content';
+import Footer from './Footer';
+
 export default function App() {
-  return <h1>App</h1>;
+  return (
+    <>
+      <Header />
+      <Menu />
+      <div className='box'>
+        <Sidebar />
+        <Content />
+      </div>
+      <Footer />
+    </>
+  );
 }
