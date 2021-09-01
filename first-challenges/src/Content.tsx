@@ -1,3 +1,3 @@
-export default function Content() {
+export function Content() {
   return <main className='content'>Content</main>;
 }

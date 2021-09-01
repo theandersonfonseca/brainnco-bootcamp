@@ -1,3 +1,3 @@
-export default function Menu() {
+export function Menu() {
   return <nav className='menu'>Menu</nav>;
 }
