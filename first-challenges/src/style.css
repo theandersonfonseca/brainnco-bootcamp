@@ -50,3 +50,19 @@ body {
 .footer {
   height: 100px;
 }
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.btn__primary {
+  background: #8257e5;
+}
+
+.btn__secondary {
+  background: #333333;
+}
