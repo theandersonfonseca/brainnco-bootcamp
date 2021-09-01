@@ -7,31 +7,46 @@
 #root {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header,
 .menu,
 .sidebar,
-.content,
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: solid 1px #000;
 }
 
 .header {
   height: 100px;
+  background: #333333;
+  color: #f8f8f8;
 }
 
 .menu {
   height: 60px;
+  border-bottom: solid 1px #333333;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.menu__item:not(:first-child) {
+  margin-left: 15px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #000;
 }
 
 .box {
@@ -45,10 +60,21 @@ body {
 
 .content {
   width: 100%;
+  padding: 30px;
+}
+
+.paragraph {
+  margin: 10px 0;
+}
+
+.section {
+  max-width: 800px;
+  width: 100%;
 }
 
 .footer {
   height: 100px;
+  border-top: solid 1px #333333;
 }
 
 .btn {
