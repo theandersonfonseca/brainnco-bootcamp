@@ -24,6 +24,14 @@ body {
   text-align: center;
 }
 
+.content {
+  padding-left: 30px;
+}
+
+.content * {
+  margin-top: 10px;
+}
+
 .header {
   height: 100px;
   background: #333333;
@@ -55,16 +63,27 @@ body {
 }
 
 .sidebar {
-  width: 400px;
+  width: 300px;
+  flex-direction: column;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.article-link:not(:first-child) {
+  margin-top: 30px;
+}
+
+.article-link:hover {
+  color: #8257e5;
 }
 
 .content {
   width: 100%;
   padding: 30px;
-}
-
-.paragraph {
-  margin: 10px 0;
 }
 
 .section {
