@@ -37,7 +37,7 @@ export default function Table({ updateTable, setUpdateTable }: TableProps) {
     if (updateTable) {
       getCars().then(() => setUpdateTable(false));
     }
-  });
+  }, [updateTable, setUpdateTable]);
 
   async function deleteCar(plate: string) {
     fetch(API, {
