@@ -1,11 +1,13 @@
 import { useState } from 'react';
 
-import { Header } from './Header';
-import { Menu } from './Menu';
-import { Sidebar } from './Sidebar';
-import { Content } from './Content';
-import { Footer } from './Footer';
-import { Button } from './Button';
+import GlobalStyles from './styles/global';
+
+import { Header } from './components/Header';
+import { Menu } from './components/Menu';
+import { Sidebar } from './components/Sidebar';
+import { Content } from './components/Content';
+import { Footer } from './components/Footer';
+import { Button } from './components/Button';
 
 const articles = [
   {
@@ -65,11 +67,14 @@ export function App() {
     <>
       <Header />
       <Menu />
-      <div className='box'>
+
+      <div style={{ display: 'flex' }}>
         <Sidebar articles={articles} setArticle={setArticle} />
         <Content article={article} />
       </div>
+
       <Footer />
+      <GlobalStyles />
     </>
   );
 }

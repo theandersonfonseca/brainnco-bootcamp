@@ -1,3 +1,5 @@
+import * as S from './styles';
+
 type ArticlesProps = {
   id: number;
   title: string;
@@ -13,7 +15,7 @@ type SidebarProps = {
 
 export function Sidebar({ articles, setArticle }: SidebarProps) {
   return (
-    <aside className='sidebar'>
+    <S.Wrapper>
       {articles.map((article) => (
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a
@@ -30,6 +32,6 @@ export function Sidebar({ articles, setArticle }: SidebarProps) {
           {article.title}
         </a>
       ))}
-    </aside>
+    </S.Wrapper>
   );
 }

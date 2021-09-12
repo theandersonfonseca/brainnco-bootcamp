@@ -1,6 +1,8 @@
+import * as S from './styles';
+
 export function Menu() {
   return (
-    <nav className='menu'>
+    <S.Wrapper>
       <ul className='menu__list'>
         <li className='menu__item'>
           <a className='menu__link' href='https://google.com'>
@@ -18,6 +20,6 @@ export function Menu() {
           </a>
         </li>
       </ul>
-    </nav>
+    </S.Wrapper>
   );
 }
