@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import './styles.css';
-
 const API = 'http://localhost:3333/cars';
 
 const initialValues = {

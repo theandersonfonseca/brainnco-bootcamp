@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import './styles.css';
+import * as S from './styles';
 
 const API = 'http://localhost:3333/cars';
 
@@ -50,7 +50,7 @@ export default function Table({ updateTable, setUpdateTable }: TableProps) {
   }
 
   return (
-    <table>
+    <S.Wrapper>
       <thead>
         <tr>
           <th>Imagem</th>
@@ -83,6 +83,6 @@ export default function Table({ updateTable, setUpdateTable }: TableProps) {
           </tr>
         )}
       </tbody>
-    </table>
+    </S.Wrapper>
   );
 }
