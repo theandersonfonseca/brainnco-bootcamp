@@ -8,6 +8,7 @@
 - [x] Desafio 4
 - [x] Desafio 5
 - [x] Desafio 6
+- [x] Desafio 7
 - [ ] Desafio 8
 - [ ] Desafio 9
 - [ ] Desafio 10
