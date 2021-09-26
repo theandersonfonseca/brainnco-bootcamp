@@ -11,6 +11,6 @@
 - [x] Desafio 7
 - [x] Desafio 8
 - [x] Desafio 9
-- [ ] Desafio 10
+- [x] Desafio 10
 
 ---
